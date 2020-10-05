@@ -1,0 +1,32 @@
+{
+  "name": "react-nextjs-template",
+  "version": "1.0.0",
+  "description": "NextJS React App Template",
+  "scripts": {
+    "dev": "next dev -p 8081",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenayordgeorgieva/react-nextjs-template.git"
+  },
+  "keywords": [
+    "react",
+    "react-js",
+    "next",
+    "next-js",
+    "javascript"
+  ],
+  "author": "Irena Georgieva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irenayordgeorgieva/react-nextjs-template/issues"
+  },
+  "homepage": "https://github.com/irenayordgeorgieva/react-nextjs-template#readme",
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
