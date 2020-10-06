@@ -4,11 +4,14 @@ const Error = ({ statusCode }) => {
   const router = useRouter()
 
   return (
-    <div>
+    <div id="page_container">
       <h1>{`Error ${statusCode}`}</h1>
-      <p>Something went wrong :(</p>
-      <span onClick={() => router.back()}><a>Go back</a></span><br/>
-      <img src={`https://http.cat/${statusCode}.jpg`} />
+      <div className="nav-bar">
+        <span onClick={() => router.back()}><a className="nav-bar-item">Go back</a></span>
+      </div>
+      <div className="main-cat-image-container">
+        <img className="main-cat-image" src={`https://http.cat/${statusCode}.jpg`} />
+      </div>
     </div>
   )
 }

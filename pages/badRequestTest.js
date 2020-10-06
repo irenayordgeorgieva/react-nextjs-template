@@ -1,7 +1,7 @@
 import Error from './_error'
 
 const BadRequestTest = () => (
-  <div>
+  <div id="page_container">
     <Error statusCode={400} />
   </div>
 )
