@@ -6,6 +6,14 @@ const Test = () => (
     <Link href="/">
       <a>Go to home page</a>
     </Link>
+    <br/>
+    <Link href="/badRequestTest">
+      <a>Bad Request test</a>
+    </Link>
+    <br/>
+    <Link href="/tesst">
+      <a>Not Found test</a>
+    </Link>
   </div>
 )
 
