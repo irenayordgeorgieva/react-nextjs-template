@@ -1,19 +1,24 @@
 import Link from 'next/link'
 
 const Test = () => (
-  <div>
+  <div id="page_container">
     <h1>Test page</h1>
-    <Link href="/">
-      <a>Go to home page</a>
-    </Link>
-    <br/>
-    <Link href="/badRequestTest">
-      <a>Bad Request test</a>
-    </Link>
-    <br/>
-    <Link href="/tesst">
-      <a>Not Found test</a>
-    </Link>
+    <div className="nav-bar">
+      <Link href="/">
+        <a className="nav-bar-item">Go to home page</a>
+      </Link>
+      <p className="nav-bar-item-separator">|</p>
+      <Link href="/badRequestTest">
+        <a className="nav-bar-item">Bad Request test</a>
+      </Link>
+      <p className="nav-bar-item-separator">|</p>
+      <Link href="/tesst">
+        <a className="nav-bar-item">Not Found test</a>
+      </Link>
+    </div>
+    <div className="main-cat-image-container">
+      <img className="main-cat-image" src="http://lorempixel.com/750/600/cats" />
+    </div>
   </div>
 )
 
