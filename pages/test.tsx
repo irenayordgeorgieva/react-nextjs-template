@@ -7,11 +7,9 @@ const Test = () => (
       <Link href="/">
         <a className="nav-bar-item">Go to home page</a>
       </Link>
-      <p className="nav-bar-item-separator">|</p>
       <Link href="/badRequestTest">
         <a className="nav-bar-item">Bad Request test</a>
       </Link>
-      <p className="nav-bar-item-separator">|</p>
       <Link href="/tesst">
         <a className="nav-bar-item">Not Found test</a>
       </Link>

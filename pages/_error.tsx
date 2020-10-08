@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
+import { NextPageContext } from 'next/types'
 
-const Error = ({ statusCode }) => {
+const Error = ({ statusCode }: ErrorProps) => {
   const router = useRouter()
 
   return (
@@ -16,9 +17,13 @@ const Error = ({ statusCode }) => {
   )
 }
 
-Error.getInitialProps = ({ res, err }) => {
+Error.getInitialProps = ({ res, err }: NextPageContext) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
   return { statusCode }
+}
+
+type ErrorProps = {
+  statusCode: number
 }
 
 export default Error
